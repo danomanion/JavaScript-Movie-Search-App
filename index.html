@@ -7,10 +7,20 @@
   </head>
   <body>
     <header>
-
-    </header
-    <main class="container">
-      <h1>Movie Search</h1>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Movie Search</a>
+      </nav>
+    </header>
+    <main class="container mt-2">
+      <form>
+        <fieldset class="form-group">
+          <label for="searchTerm">Search</label>
+          <input type="text" class="form-control" id="searchTerm" placeholder="Enter a movie title">
+        </fieldset>
+        <button type="submit" class="btn btn-primary">Go!</button>
+      </form>
+      <section id="results" class="mt-2 row">
+      </section>
     </main>
 
     <script src="app.js" charset="utf-8"></script>
