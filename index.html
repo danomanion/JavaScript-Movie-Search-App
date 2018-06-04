@@ -3,6 +3,12 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <style>
+      .movies-area {
+        justify-content: space-around;
+        align-items: flex-start;
+      }
+    </style>
     <title></title>
   </head>
   <body>
@@ -19,7 +25,15 @@
         </fieldset>
         <button type="submit" class="btn btn-primary">Go!</button>
       </form>
-      <section id="results" class="mt-2 row">
+      <section class="row movies-area">
+        <section id="results" class="mt-2 col-9 row">
+        </section>
+        <section class="mt-2 col-3 row">
+          <h3>Watch Later</h3>
+          <section id="watch-later" class="row">
+            <!-- <small>You have no movies queued.</small> -->
+          </section>
+        </section>
       </section>
     </main>
 
